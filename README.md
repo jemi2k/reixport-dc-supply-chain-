@@ -1,6 +1,6 @@
-# Simple Supply Chain Simulation
+# ReiXport Trade Finanace MVP 
 
-[Supply chain simulation using blockchain.](https://www.youtube.com/watch?v=2e-NGuT1PnY)
+
 
 ## 🔧 Setting up Local Development
 
@@ -16,10 +16,6 @@ Import the ganache local blockchain accounts in metamask using the mnemonic prov
 
 Clone the repo
 
-```bash
-git clone https://github.com/codeTIT4N/supply-chain-truffle-react.git
-cd supply-chain-truffle-react
-```
 
 ### Step 4
 
@@ -63,4 +59,4 @@ npm start
 ```
 
 The site is now running at `http://localhost:3000`!
-Open the source code and start editing!
+

@@ -1,19 +1,40 @@
 * {
     background-color: white;
+  
+    /* padding: 0.5em 0 0 0.5em; */
+    margin-top: 8px;
+    margin-left: 8px;
+    
 }
 
 .container {
     margin: auto;
+    
+    padding: 10px;
+    border: 2px;
+    
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    margin: auto;
     text-align: center;
     padding: 10px;
     border: 2px;
+    
+    
+    justify-content: center;
+    align-items: center;
 }
+
 hr{
     position: relative;
     top: 20px;
     border: none;   
-    height: 12px;
-    background: black;
+    height: 10px;
+    background: rgb(72, 60, 241);
 }
 .wait{
     text-align: center;
@@ -22,32 +43,37 @@ hr{
 .header {
     border: 2px;
     padding: 10px;
+    
+    
+
 }
+
+
 .register {
-    background-color: azure;
-    border: 2px solid #ccc; /* Border color and width */
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #a7abfc; /* Border color and width */
     border-radius: 8px; /* Border radius for rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    
     padding: 20px; /* Add padding to create some space inside the border */
 }
 .ordermedicines {
-    background-color: azure;
-    border: 2px solid #ccc; /* Border color and width */
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #a7abfc; /* Border color and width */
     border-radius: 8px; /* Border radius for rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    
     padding: 20px; /* Add padding to create some space inside the border */
 }
 .controlchain {
-    background-color: azure;
-    border: 2px solid #ccc; /* Border color and width */
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #a7abfc; /* Border color and width */
     border-radius: 8px; /* Border radius for rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+   
     padding: 20px; /* Add padding to create some space inside the border */
 }
 .track {
-    border: 2px solid #ccc; /* Border color and width */
+    border: 2px solid #a7abfc; /* Border color and width */
     border-radius: 8px; /* Border radius for rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    
     padding: 20px; /* Add padding to create so */
 }
   

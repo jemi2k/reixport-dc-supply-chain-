@@ -105,11 +105,11 @@ function Track() {
         <article className="col-4">
           <h3>
             <b>
-              <u>Medicine:</u>
+              <u>TF/DLC:</u>
             </b>
           </h3>
           <span>
-            <b>Medicine ID: </b>
+            <b>TF/DLC Number: </b>
             {MED[ID].id}
           </span>
           <br />
@@ -132,10 +132,10 @@ function Track() {
         <section className="row">
           <article className="col-3">
             <h4>
-              <u>Raw Materials Supplied by:</u>
+              <u>TF/DLC Issued by:</u>
             </h4>
             <p>
-              <b>Supplier ID: </b>
+              <b>Buyer/Importer/Issuing Bank ID: </b>
               {RMS[MED[ID].RMSid].id}
             </p>
             <p>
@@ -149,10 +149,10 @@ function Track() {
           <span>&#10132;</span>
           <article className="col-3">
             <h4>
-              <u>Manufactured by:</u>
+              <u>Shiped by:</u>
             </h4>
             <p>
-              <b>Manufacturer ID: </b>
+              <b>Logistic and Shipment ID: </b>
               {MAN[MED[ID].MANid].id}
             </p>
             <p>
@@ -166,10 +166,10 @@ function Track() {
           <span>&#10132;</span>
           <article className="col-3">
             <h4>
-              <u>Distributed by:</u>
+              <u>Shipment DDC Send by:</u>
             </h4>
             <p>
-              <b>Distributor ID: </b>
+              <b>Exporter/Seller ID: </b>
               {DIS[MED[ID].DISid].id}
             </p>
             <p>
@@ -183,10 +183,10 @@ function Track() {
           <span>&#10132;</span>
           <article className="col-3">
             <h4>
-              <u>Retailed by:</u>
+              <u>Payment Paid by:</u>
             </h4>
             <p>
-              <b>Retailer ID: </b>
+              <b>Buyer/Importer/Issuing Bank ID: </b>
               {RET[MED[ID].RETid].id}
             </p>
             <p>
@@ -200,7 +200,7 @@ function Track() {
           <span>&#10132;</span>
           <article className="col-3">
             <h4>
-              <u>Sold</u>
+              <u>TF/DLC Completed</u>
             </h4>
           </article>
         </section>
@@ -230,11 +230,11 @@ function Track() {
         <article className="col-4">
           <h3>
             <b>
-              <u>Medicine:</u>
+              <u>TF/DLC:</u>
             </b>
           </h3>
           <span>
-            <b>Medicine ID: </b>
+            <b>TF/DLC ID: </b>
             {MED[ID].id}
           </span>
           <br />
@@ -257,10 +257,10 @@ function Track() {
         <section className="row">
           <article className="col-3">
             <h4>
-              <u>Raw Materials Supplied by:</u>
+              <u>TF/DLC Issuing by:</u>
             </h4>
             <p>
-              <b>Supplier ID: </b>
+              <b>Buyer/Importer/Issuing Bank ID: </b>
               {RMS[MED[ID].RMSid].id}
             </p>
             <p>
@@ -274,10 +274,10 @@ function Track() {
           <span>&#10132;</span>
           <article className="col-3">
             <h4>
-              <u>Manufactured by:</u>
+              <u>Shiped by:</u>
             </h4>
             <p>
-              <b>Manufacturer ID: </b>
+              <b>Logistics and Shipment ID: </b>
               {MAN[MED[ID].MANid].id}
             </p>
             <p>
@@ -291,10 +291,10 @@ function Track() {
           <span>&#10132;</span>
           <article className="col-3">
             <h4>
-              <u>Distributed by:</u>
+              <u>Shipment DDC sent by:</u>
             </h4>
             <p>
-              <b>Distributor ID: </b>
+              <b>Exporter/Seller ID: </b>
               {DIS[MED[ID].DISid].id}
             </p>
             <p>
@@ -308,10 +308,10 @@ function Track() {
           <span>&#10132;</span>
           <article className="col-3">
             <h4>
-              <u>Retailed by:</u>
+              <u>Payment Paid by:</u>
             </h4>
             <p>
-              <b>Retailer ID: </b>
+              <b>Buyer/Importer/Issuing Bank ID: </b>
               {RET[MED[ID].RETid].id}
             </p>
             <p>
@@ -349,11 +349,11 @@ function Track() {
         <article className="col-4">
           <h3>
             <b>
-              <u>Medicine:</u>
+              <u>TF/DLC:</u>
             </b>
           </h3>
           <span>
-            <b>Medicine ID: </b>
+            <b>TF/DLC ID: </b>
             {MED[ID].id}
           </span>
           <br />
@@ -376,10 +376,10 @@ function Track() {
         <section className="row">
           <article className="col-3">
             <h4>
-              <u>Raw Materials Supplied by:</u>
+              <u>TF/DLC Issuing by:</u>
             </h4>
             <p>
-              <b>Supplier ID: </b>
+              <b>Buyer/Importer/Issuing Bank ID: </b>
               {RMS[MED[ID].RMSid].id}
             </p>
             <p>
@@ -393,10 +393,10 @@ function Track() {
           <span>&#10132;</span>
           <article className="col-3">
             <h4>
-              <u>Manufactured by:</u>
+              <u>Shiped by:</u>
             </h4>
             <p>
-              <b>Manufacturer ID: </b>
+              <b>Logistics and Shipment ID: </b>
               {MAN[MED[ID].MANid].id}
             </p>
             <p>
@@ -410,10 +410,10 @@ function Track() {
           <span>&#10132;</span>
           <article className="col-3">
             <h4>
-              <u>Distributed by:</u>
+              <u>Shipment DDC Sent by:</u>
             </h4>
             <p>
-              <b>Distributor ID: </b>
+              <b>Exporter/Seller ID: </b>
               {DIS[MED[ID].DISid].id}
             </p>
             <p>
@@ -451,11 +451,11 @@ function Track() {
         <article className="col-4">
           <h3>
             <b>
-              <u>Medicine:</u>
+              <u>TF/DLC:</u>
             </b>
           </h3>
           <span>
-            <b>Medicine ID: </b>
+            <b>TF/DLC ID: </b>
             {MED[ID].id}
           </span>
           <br />
@@ -478,10 +478,10 @@ function Track() {
         <section className="row">
           <article className="col-3">
             <h4>
-              <u>Raw Materials Supplied by:</u>
+              <u>Issuing by:</u>
             </h4>
             <p>
-              <b>Supplier ID: </b>
+              <b>Buyer/Importer/Issuing Bank ID: </b>
               {RMS[MED[ID].RMSid].id}
             </p>
             <p>
@@ -495,10 +495,10 @@ function Track() {
           <span>&#10132;</span>
           <article className="col-3">
             <h4>
-              <u>Manufactured by:</u>
+              <u>Shiped by:</u>
             </h4>
             <p>
-              <b>Manufacturer ID: </b>
+              <b>Logistics and Shipment ID: </b>
               {MAN[MED[ID].MANid].id}
             </p>
             <p>
@@ -536,11 +536,11 @@ function Track() {
         <article className="col-4">
           <h3>
             <b>
-              <u>Medicine:</u>
+              <u>TF/DLC:</u>
             </b>
           </h3>
           <span>
-            <b>Medicine ID: </b>
+            <b>TF/DLC ID: </b>
             {MED[ID].id}
           </span>
           <br />
@@ -563,10 +563,10 @@ function Track() {
         <section className="row">
           <article className="col-3">
             <h4>
-              <u>Raw Materials Supplied by:</u>
+              <u>Issuing by:</u>
             </h4>
             <p>
-              <b>Supplier ID: </b>
+              <b>Buyer/Importer/Issuing Bank ID: </b>
               {RMS[MED[ID].RMSid].id}
             </p>
             <p>
@@ -604,11 +604,11 @@ function Track() {
         <article className="col-4">
           <h3>
             <b>
-              <u>Medicine:</u>
+              <u>TF/DLC:</u>
             </b>
           </h3>
           <span>
-            <b>Medicine ID: </b>
+            <b>TF/DLC Number: </b>
             {MED[ID].id}
           </span>
           <br />
@@ -627,7 +627,7 @@ function Track() {
           </span>
           <hr />
           <br />
-          <h5>Medicine Not Yet Processed...</h5>
+          <h5>TF/DLC Not Yet Processed...</h5>
           <button
             onClick={() => {
               showTrackTillOrdered(false);
@@ -685,20 +685,24 @@ function Track() {
 
   return (
     <div>
-      <span>
-        <b>Current Account Address:</b> {currentaccount}
-      </span>
+     
       <span
         onClick={redirect_to_home}
-        className="btn btn-outline-danger btn-sm"
+        className="btn btn-primary  border-spacing: 5px"
       >
-        {" "}
-        HOME
+        HOME 
       </span>
-      <table className="table table-sm table-bordered">
+      <span className="btn btn-outline-primary  border-spacing: 5px">
+        Account Address: {currentaccount}
+      </span>
+      
+      <hr />
+      <br />
+     <div class="container"> 
+      <table className="table-bordered table-striped table  w-auto">
         <thead>
           <tr>
-            <th scope="col">Medicine ID</th>
+            <th scope="col">TF/DLC Number</th>
             <th scope="col">Name</th>
             <th scope="col">Description</th>
             <th scope="col">Current Processing Stage</th>
@@ -717,23 +721,29 @@ function Track() {
           })}
         </tbody>
       </table>
-      <h5>Enter Medicine ID to Track it</h5>
+      <h5 className="btn btn-outline-dark  border-spacing: 5px" >Enter TF/DLC ID to Track it</h5>
 
       <form onSubmit={handlerSubmit}>
+      <div class="form-row">
+    <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeID}
-          placeholder="Enter Medicine ID"
+          placeholder="Enter TF/DLC ID"
           required
         />
+        </div>
+        <div class="col-auto">
         <button
-          className="btn btn-outline-success btn-sm"
+          className="btn btn-outline-primary mb-2"
           onSubmit={handlerSubmit}
         >
           Track
-        </button>
+        </button></div>
+        </div>
       </form>
+      </div>
     </div>
   );
 }

@@ -138,27 +138,36 @@ function Supply() {
   };
   return (
     <div>
-      <span>
-        <b>Current Account Address:</b> {currentaccount}
-      </span>
+      
       <span
         onClick={redirect_to_home}
-        className="btn btn-outline-danger btn-sm"
+        className="btn btn-primary  border-spacing: 5px"
       >
-        {" "}
-        HOME
+        HOME 
       </span>
-      <h6>
-        <b>Supply Chain Flow:</b>
-      </h6>
+      <span className="btn btn-outline-primary  border-spacing: 5px">
+        Account Address: {currentaccount}
+      </span>
+
+      <div class="container"> 
+      
+      <h5 className="btn btn-outline-dark  border-spacing: 5px" >
+        ReiXport Work Flow
+      </h5>
+      <br />
       <p>
-        Medicine Order -&gt; Raw Material Supplier -&gt; Manufacturer -&gt;
-        Distributor -&gt; Retailer -&gt; Consumer
+        TF/DLC Order &#8611; Issuing TF/DLC &#8611; Goods Shipment &#8611;
+        Exporter/Seller Send DDC &#8611; Payment Settlement &#8611; Confirmation
       </p>
-      <table className="table table-sm table-dark">
+      
+      <hr />
+      <br />
+      
+
+      <table className="table-bordered table-striped table  w-auto">
         <thead>
           <tr>
-            <th scope="col">Medicine ID</th>
+            <th scope="col">TF/DLC Number</th>
             <th scope="col">Name</th>
             <th scope="col">Description</th>
             <th scope="col">Current Processing Stage</th>
@@ -177,110 +186,146 @@ function Supply() {
           })}
         </tbody>
       </table>
-      <h5>
-        <b>Step 1: Supply Raw Materials</b>(Only a registered Raw Material
-        Supplier can perform this step):-
+      
+      <hr />
+      <br />
+      <h5 className="btn btn-outline-dark  border-spacing: 5px" >
+        Step 1 &#8611; Issuing TF/DLC | Only a Registered Party, Buyer/Importer/Bank,
+       can Perform this Step
       </h5>
       <form onSubmit={handlerSubmitRMSsupply}>
+
+      <div class="form-row">
+    <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeID}
-          placeholder="Enter Medicine ID"
+          placeholder="Enter TF/DLC ID"
           required
         />
+        </div>
+        <div class="col-auto">
         <button
-          className="btn btn-outline-success btn-sm"
+          className="btn btn-outline-primary mb-2"
           onSubmit={handlerSubmitRMSsupply}
         >
-          Supply
+          Issue
         </button>
+        </div>
+        </div>
+
       </form>
-      <hr />
+
+     
       <br />
-      <h5>
-        <b>Step 2: Manufacture</b>(Only a registered Manufacturer can perform
-        this step):-
+      <h5 className="btn btn-outline-dark  border-spacing: 5px" >
+        Step 2 &#8611; Shipment | Only a Registered Logistics and Shipment Provider can Perform
+        this Step
       </h5>
       <form onSubmit={handlerSubmitManufacturing}>
+
+      <div class="form-row">
+      <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeID}
-          placeholder="Enter Medicine ID"
+          placeholder="Enter TF/DLC ID"
           required
         />
+        </div>
+        <div class="col-auto">
         <button
-          className="btn btn-outline-success btn-sm"
+          className="btn btn-outline-primary mb-2"
           onSubmit={handlerSubmitManufacturing}
         >
-          Manufacture
+          Generate Shipment DDC
         </button>
+        </div>
+        </div> 
+
       </form>
-      <hr />
+      
       <br />
-      <h5>
-        <b>Step 3: Distribute</b>(Only a registered Distributor can perform this
-        step):-
+      <h5 className="btn btn-outline-dark  border-spacing: 5px" >
+        Step 3 &#8611; Seller/Exporter | Only a registered Exporter/Seller can Perform this
+        Step
       </h5>
       <form onSubmit={handlerSubmitDistribute}>
+      <div class="form-row">
+      <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeID}
-          placeholder="Enter Medicine ID"
+          placeholder="Enter TF/DLC ID"
           required
         />
+        </div>
+        <div class="col-auto">
         <button
-          className="btn btn-outline-success btn-sm"
+          className="btn btn-outline-primary mb-2"
           onSubmit={handlerSubmitDistribute}
         >
-          Distribute
-        </button>
+          Send Shipment DDC
+        </button></div>
+        </div>
       </form>
-      <hr />
+      
       <br />
-      <h5>
-        <b>Step 4: Retail</b>(Only a registered Retailer can perform this
-        step):-
+      <h5 className="btn btn-outline-dark  border-spacing: 5px" >
+        Step 4 &#8611; Payment Settlement | Only a Registered, Buyer/Importer/Issuing Bank, can Perform this
+        step
       </h5>
       <form onSubmit={handlerSubmitRetail}>
+      <div class="form-row">
+      <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeID}
-          placeholder="Enter Medicine ID"
+          placeholder="Enter TF/DLC ID"
           required
         />
+        </div>
+        <div class="col-auto">
         <button
-          className="btn btn-outline-success btn-sm"
+          className="btn btn-outline-primary mb-2"
           onSubmit={handlerSubmitRetail}
         >
-          Retail
-        </button>
+          Release Payment
+        </button></div>
+        </div>
       </form>
-      <hr />
+     
       <br />
-      <h5>
-        <b>Step 5: Mark as sold</b>(Only a registered Retailer can perform this
-        step):-
+      <h5 className="btn btn-outline-dark  border-spacing: 5px" >
+        Step 5 &#8611; Confirm as Done | Only a Registered Party can Perform this
+        step
       </h5>
       <form onSubmit={handlerSubmitSold}>
+      <div class="form-row">
+      <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeID}
-          placeholder="Enter Medicine ID"
+          placeholder="Enter TF/DLC ID"
           required
         />
+        </div>
+        <div class="col-auto">
         <button
-          className="btn btn-outline-success btn-sm"
+          className="btn btn-outline-primary mb-2"
           onSubmit={handlerSubmitSold}
         >
-          Sold
-        </button>
+          Confirm
+        </button></div>
+        </div>
       </form>
-      <hr />
+  
+      </div>
     </div>
   );
 }

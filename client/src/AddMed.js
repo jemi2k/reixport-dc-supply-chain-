@@ -91,46 +91,64 @@ function AddMed() {
   };
   return (
     <div>
-      <span>
-        <b>Current Account Address:</b> {currentaccount}
-      </span>
       <span
         onClick={redirect_to_home}
-        className="btn btn-outline-danger btn-sm"
+        className="btn btn-primary  border-spacing: 5px"
       >
-        {" "}
-        HOME
+        HOME 
       </span>
-      <br />
-      <h5>Add Medicine Order:</h5>
+      <span className="btn btn-outline-primary  border-spacing: 5px">
+        Account Address: {currentaccount}
+      </span>
+     
+     <hr />
+     <br />
+     
+      <div class="container"> 
+      
+      <h4 className="btn btn-outline-dark  border-spacing: 5px">Add TF/DLC Order:</h4>
       <form onSubmit={handlerSubmitMED}>
+
+      <div class="form-row">
+      <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeNameMED}
-          placeholder="Medicine Name"
+          placeholder="TF Name"
           required
         />
+        </div>
+
+        <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeDesMED}
-          placeholder="Medicine Description"
+          placeholder="TF Description"
           required
         />
+       </div>
+       
+       <div class="col-auto">
+      
         <button
-          className="btn btn-outline-success btn-sm"
+          className="btn btn-outline-primary mb-2"
           onSubmit={handlerSubmitMED}
         >
-          Order
+          Order/Apply
         </button>
+        </div>
+        </div>
+
+        <br />
       </form>
-      <br />
-      <h5>Ordered Medicines:</h5>
-      <table className="table table-bordered">
+     
+      <h4 className="btn btn-outline-dark  border-spacing: 5px">Ordered TF/DLC</h4>
+      <table className="table-bordered table-striped table  w-auto">
         <thead>
           <tr>
-            <th scope="col">ID</th>
+            <th scope="col">TF ID</th>
             <th scope="col">Name</th>
             <th scope="col">Description</th>
             <th scope="col">Current Stage</th>
@@ -149,6 +167,7 @@ function AddMed() {
           })}
         </tbody>
       </table>
+      </div>
     </div>
   );
 }

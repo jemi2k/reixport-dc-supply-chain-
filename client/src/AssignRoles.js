@@ -30,14 +30,14 @@ function AssignRoles() {
   const [RET, setRET] = useState();
 
   const loadWeb3 = async () => {
-    if (window.ethereum) {
-      window.web3 = new Web3(window.ethereum);
-      await window.ethereum.enable();
+    if (window.ReiXport) {
+      window.web3 = new Web3(window.ReiXport);
+      await window.ReiXport.enable();
     } else if (window.web3) {
       window.web3 = new Web3(window.web3.currentProvider);
     } else {
       window.alert(
-        "Non-Ethereum browser detected. You should consider trying MetaMask!"
+        "Non-ReiXport browser detected. You should consider trying MetaMask!"
       );
     }
   };
@@ -186,53 +186,71 @@ function AssignRoles() {
   };
 
   return (
-    <div>
-      <span>
-        <b>Current Account Address:</b> {currentaccount}
-      </span>
-      <span
+   <div> 
+     <span
         onClick={redirect_to_home}
-        className="btn btn-outline-danger btn-sm"
+        className="btn btn-primary  border-spacing: 5px"
       >
-        HOME
+        HOME 
       </span>
-      <h4>Raw Material Suppliers:</h4>
-      <form onSubmit={handlerSubmitRMS}>
-        <input
-          className="form-control-sm"
+      <span className="btn btn-outline-primary  border-spacing: 5px">
+        Account Address: {currentaccount}
+      </span>
+      <hr />
+      <br />
+    <div class="container"> 
+    
+     
+      
+     
+      <h4 className="btn btn-outline-dark  border-spacing: 5px" >Buyer/Importer/Issuing Bank</h4>
+      <form  onSubmit={handlerSubmitRMS}>
+        
+      
+      
+
+      <div class="form-row">
+    <div class="col-3">
+    <input
+          className="form-control"
           type="text"
           onChange={handlerChangeAddressRMS}
-          placeholder="Ethereum Address"
+          placeholder="ReiXport Address"
           required
         />
-        <input
-          className="form-control-sm"
+    </div>
+    <div class="col-3">
+    <input
+          className="form-control"
           type="text"
           onChange={handlerChangeNameRMS}
-          placeholder="Raw Material Supplier Name"
+          placeholder="Issuing Bank Name"
           required
         />
-        <input
-          className="form-control-sm"
+    </div>
+    <div class="col-3">
+    <input
+          className="form-control"
           type="text"
           onChange={handlerChangePlaceRMS}
           placeholder="Based In"
           required
         />
-        <button
-          className="btn btn-outline-success btn-sm"
-          onSubmit={handlerSubmitRMS}
-        >
-          Register
-        </button>
-      </form>
-      <table className="table table-sm">
+    </div>
+    <div class="col-auto">
+      <button onSubmit={handlerSubmitRMS} class="btn btn-outline-primary mb-2">Register</button>
+      
+    </div>
+  </div>
+
+  </form>
+      <table className="table-bordered table-striped table  w-auto">
         <thead>
           <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Place</th>
-            <th scope="col">Ethereum Address</th>
+            <th >Importer/Is_Bank_ID</th>
+            <th >Name</th>
+            <th >Place</th>
+            <th >ReiXport Address</th>
           </tr>
         </thead>
         <tbody>
@@ -248,43 +266,55 @@ function AssignRoles() {
           })}
         </tbody>
       </table>
-      <h4>Manufacturers:</h4>
+      <h4 className="btn btn-outline-dark  border-spacing: 5px" > Logistics and Shipment Provider </h4>
       <form onSubmit={handlerSubmitMAN}>
+      <div class="form-row">
+    <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeAddressMAN}
-          placeholder="Ethereum Address"
+          placeholder="ReiXport Address"
           required
-        />
+        /> 
+        </div>
+        <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeNameMAN}
-          placeholder="Manufacturer Name"
+          placeholder="Logistics and Shipment Provider Name"
           required
         />
+        </div>
+        <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangePlaceMAN}
           placeholder="Based In"
           required
         />
+        </div>
+        <div class="col-auto">
         <button
-          className="btn btn-outline-success btn-sm"
+          className="btn btn-outline-primary mb-2"
           onSubmit={handlerSubmitMAN}
         >
           Register
         </button>
+        </div>
+        </div>
+        
+
       </form>
-      <table className="table table-sm">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
+      <table className=" table-bordered w-auto table-striped table table-sm">
+        <thead class="thead-dark">
+          <tr >
+            <th scope="col">LS-ID</th>
             <th scope="col">Name</th>
             <th scope="col">Place</th>
-            <th scope="col">Ethereum Address</th>
+            <th scope="col">ReiXport Address</th>
           </tr>
         </thead>
         <tbody>
@@ -300,43 +330,53 @@ function AssignRoles() {
           })}
         </tbody>
       </table>
-      <h4>Distributors:</h4>
+      <h4 className="btn btn-outline-dark  border-spacing: 5px" >Exporter/Seller</h4>
       <form onSubmit={handlerSubmitDIS}>
+      <div class="form-row">
+    <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeAddressDIS}
-          placeholder="Ethereum Address"
+          placeholder="ReiXport Address"
           required
         />
+        </div>
+        <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeNameDIS}
-          placeholder="Distributor Name"
+          placeholder="Exporter | Seller Name"
           required
         />
+        </div>
+        <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangePlaceDIS}
           placeholder="Based In"
           required
         />
+        </div>
+        <div class="col-auto">
         <button
-          className="btn btn-outline-success btn-sm"
+          className="btn btn-outline-primary mb-2"
           onSubmit={handlerSubmitDIS}
         >
           Register
         </button>
+        </div>
+        </div>
       </form>
-      <table className="table table-sm">
+      <table className="col table-bordered w-auto table-striped table table-sm">
         <thead>
           <tr>
-            <th scope="col">ID</th>
+            <th scope="col">Seller ID</th>
             <th scope="col">Name</th>
             <th scope="col">Place</th>
-            <th scope="col">Ethereum Address</th>
+            <th scope="col">ReiXport Address</th>
           </tr>
         </thead>
         <tbody>
@@ -352,43 +392,53 @@ function AssignRoles() {
           })}
         </tbody>
       </table>
-      <h4>Retailers:</h4>
+      <h4 className="btn btn-outline-dark  border-spacing: 5px" >Payment Settlement/Buyer/Issuing Bank</h4>
       <form onSubmit={handlerSubmitRET}>
+      <div class="form-row">
+    <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeAddressRET}
-          placeholder="Ethereum Address"
+          placeholder="ReiXport Address"
           required
         />
+        </div>
+        <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangeNameRET}
-          placeholder="Retailer Name"
+          placeholder="Bank Name"
           required
         />
+        </div>
+        <div class="col-3">
         <input
-          className="form-control-sm"
+          className="form-control"
           type="text"
           onChange={handlerChangePlaceRET}
           placeholder="Based In"
           required
         />
+        </div>
+        <div class="col-auto">
         <button
-          className="btn btn-outline-success btn-sm"
+          className="btn btn-outline-primary mb-2"
           onSubmit={handlerSubmitRET}
         >
           Register
         </button>
+        </div>
+        </div>
       </form>
-      <table className="table table-sm">
+      <table className="table-bordered w-auto table-striped table table-sm">
         <thead>
           <tr>
-            <th scope="col">ID</th>
+            <th scope="col">Bank ID</th>
             <th scope="col">Name</th>
             <th scope="col">Place</th>
-            <th scope="col">Ethereum Address</th>
+            <th scope="col">ReiXport Address</th>
           </tr>
         </thead>
         <tbody>
@@ -404,6 +454,7 @@ function AssignRoles() {
           })}
         </tbody>
       </table>
+    </div>
     </div>
   );
 }
