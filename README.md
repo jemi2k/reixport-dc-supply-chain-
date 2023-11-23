@@ -6,7 +6,7 @@
 
 ### Step 1
 
-Open ganache UI/cli and configure truffle-config.js file. Not required for most cases.
+Open ganache-cli and configure truffle-config.js file. Not required for most cases.
 
 ### Step 2
 

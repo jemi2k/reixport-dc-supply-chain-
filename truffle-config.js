@@ -35,7 +35,7 @@ module.exports = {
    * $ truffle test --network <network-name>
    */
 
-  contracts_build_directory: './client/src/artifacts',
+  //contracts_build_directory: './client/src/artifacts',
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
@@ -44,9 +44,9 @@ module.exports = {
     // options below to some value.
     //
     development: {
-      host: "127.0.0.1",     // Localhost (default: none)
-      port: 8545,            // Standard Ethereum port (default: none)
-      network_id: "*",       // Any network (default: none)
+      host: "127.0.0.1", // Localhost (default: none)
+      port: 8545, // Standard Ethereum port (default: none)
+      network_id: "*", // Any network (default: none)
     },
     // Another network with more advanced options...
     // advanced: {
@@ -92,7 +92,7 @@ module.exports = {
       //  },
       //  evmVersion: "byzantium"
       // }
-    }
+    },
   },
 
   // Truffle DB is currently disabled by default; to enable it, change enabled: false to enabled: true
@@ -102,6 +102,6 @@ module.exports = {
   // $ truffle migrate --reset --compile-all
 
   db: {
-    enabled: false
-  }
+    enabled: false,
+  },
 };
