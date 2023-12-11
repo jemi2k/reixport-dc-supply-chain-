@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@pdftron/webviewer": "^10.6.0",
     "truffle": "^5.5.13"
   }
 }

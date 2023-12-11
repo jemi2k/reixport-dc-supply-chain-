@@ -1,11 +1,16 @@
 // import "./App.css";
 import AssignRoles from "./AssignRoles";
-import Home from "./Home";
-import AddMed from "./AddMed";
-import Supply from "./Supply";
-import Track from "./Track";
+import Home from "./pages/Home";
+import AddMed from "./pages/AddMed";
+import Supply from "./pages/Supply";
+import Track from "./pages/Track";
 import Layout from "./Components/Layout/Layout";
+import Service from "./pages/Service";
+import Create from "./pages/Create";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ContactUs from "./pages/ContactUs";
+import AboutUs from "./pages/AboutUs";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
@@ -18,6 +23,11 @@ function App() {
             <Route path="/addmed" element={<AddMed />} />
             <Route path="/supply" element={<Supply />} />
             <Route path="/track" element={<Track />} />
+            <Route path="/service" element={<Service />} />
+            <Route path="/create" element={<Create />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="*" element={<ErrorPage />} />
           </Route>
         </Routes>
       </Router>
