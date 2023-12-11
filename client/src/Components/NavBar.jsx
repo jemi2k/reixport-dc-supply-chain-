@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="flex">
         <Link to="/">
           <div className="flex gap-2 mx-3 w-48">
-            <h2 className="font-bold text-xl text-black">RexiPort</h2>
+            <h2 className="font-bold text-xl text-black">ReiXport</h2>
           </div>
         </Link>
         <ul className="font-sans font-semibold leading-[22.4px] list-none lg:flex hidden justify-end items-center flex-1">
