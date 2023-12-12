@@ -11,7 +11,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import ErrorPage from "./pages/ErrorPage";
-
+import Navbar from "./Components/NavBar";
+import CreateForm from "./Components/Create-Form";
 function App() {
   return (
     <div className="App">
@@ -24,11 +25,13 @@ function App() {
             <Route path="/supply" element={<Supply />} />
             <Route path="/track" element={<Track />} />
             <Route path="/service" element={<Service />} />
-            <Route path="/create" element={<Create />} />
+
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="*" element={<ErrorPage />} />
           </Route>
+
+          <Route path="/create" element={<CreateForm />} />
         </Routes>
       </Router>
     </div>

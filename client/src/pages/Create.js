@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import WebViewer from "@pdftron/webviewer";
 import imgSrc from "../assets/pdfs/sample.pdf";
-
 const PdfViewer = () => {
   useEffect(() => {
     WebViewer(

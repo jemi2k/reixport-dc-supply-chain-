@@ -6,22 +6,28 @@ const ContactUs = () => {
       <div className="col-span-1">
         <div className="flex flex-col gap-3 items-center h-full justify-center">
           <div>
-            <h1 className="text-[32px] text-center font-bold">Email</h1>
+            <h1 className="text-[32px] text-blue-700 text-center font-bold">
+              Email
+            </h1>
             <a href="mailto:info@reixport.com">info@reixport.com</a>
           </div>
           <div>
-            <h1 className="text-[32px] text-center font-bold">Phone</h1>
+            <h1 className="text-[32px] text-blue-700 text-center font-bold">
+              Phone
+            </h1>
             <a href="tel:+251 949 428 860">+251 949 428 860</a>
           </div>
           <div>
-            <h1 className="text-[32px] text-center font-bold">Address</h1>
+            <h1 className="text-[32px] text-blue-700 text-center font-bold">
+              Address
+            </h1>
             <p>Addis Ababa, Ethiopia</p>
           </div>
         </div>
       </div>
       <div className="bg-white col-span-2 dark:bg-gray-900">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+          <h2 className="mb-4 text-blue-700 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
             Contact Us
           </h2>
           <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">

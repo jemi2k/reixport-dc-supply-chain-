@@ -7,11 +7,11 @@ import { services } from "../constants";
 function Home() {
   return (
     <div>
-      <section className="bg-[#f4f8fd] py-2 px-20">
+      <section className="bg-[#f4f8fd] py-2 px-8 md:px-20">
         <h1 className="font-[800] text-center my-10 text-[55px]">
           Efficient Trade Document Management
         </h1>
-        <p className="px-16  text-center   text-[18px]">
+        <p className="md:px-16  text-center   text-[18px]">
           Welcome to ReiXport, where we specialize in providing secure and
           reliable document management solutions for international trade. Our
           Blockchain Document Transfer (BDT) solution is the largest and
@@ -62,8 +62,10 @@ function Home() {
         </div>
       </section> */}
       <section className="py-2 my-16 px-20">
-        <h1 className="font-[500] py-5 text-[40px] ">Services we provide</h1>
-        <div className="grid grid-cols-2 gap-5">
+        <h1 className="font-[500]  max-sm:text-center py-5 text-[40px] ">
+          Services we provide
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {services.map((service) => {
             return (
               <Card
@@ -77,7 +79,7 @@ function Home() {
         </div>
       </section>
       <section className="bg-[#f4f8fd] py-10  px-20">
-        <div className="grid grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div className="flex flex-col justify-center">
             <h1 className="font-bold text-[40px] my-2">
               Global Trading Inc: Automating Trade Document Processing
@@ -103,7 +105,7 @@ function Home() {
       </section>
 
       <section className="bg-[#f4f8fd]  py-5 px-20">
-        <div className="grid grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <img
             className="rounded-[10px]"
             src={require("../assets/main-2.jpg")}
