@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="grid gap-5 grid-cols-3">
+    <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
       <div className="col-span-1">
         <div className="flex flex-col gap-3 items-center h-full justify-center">
           <div>

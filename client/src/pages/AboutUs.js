@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div>
       <img
         className="w-full h-48 object-cover"
-        src={require("../assets/main-1.jpg")}
+        src={require("../assets/main-11.jpg")}
         alt="about us"
       />
 

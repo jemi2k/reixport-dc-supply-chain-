@@ -29,16 +29,19 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <div>
-        
+      <div className="max-sm:flex max-sm:w-full gap-2 max-sm:justify-center max-sm:items-center max-sm:flex-col">
         <Link to="/create">
-          <button className="px-5 py-3 mx-2 rounded-[10px]  hover:text-black text-blue-600  border-2  bg-transparent">
-            Start/Create 
+          <button className="px-5 py-[2px] md:py-3 mx-2 rounded-[10px]  hover:text-black text-blue-600  border-2  bg-transparent">
+            Start/Create
           </button>
         </Link>
-        <Button link="/contact">Lets Talk</Button>
+        <Link to="/contact">
+          <button className="px-5 py-[2px] md:py-3 mx-2 rounded-[10px]  hover:text-black text-white bg-blue-700  border-2 ">
+            Lets talk
+          </button>
+        </Link>
         <Link to="/read-more">
-          <button className="px-5 py-3 mx-2 rounded-[10px]  hover:text-black text-blue-600  border border-2  bg-transparent">
+          <button className="px-5 py-[2px] md:py-3 mx-2 rounded-[10px]  hover:text-black text-blue-600   border-2  bg-transparent">
             Register
           </button>
         </Link>
