@@ -1,17 +1,17 @@
-import Button from "../Components/UI/Button";
+import Button from "./Components/UI/Button";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Card from "../Components/UI/Card";
-import { services } from "../constants";
+import Card from "./Components/UI/Card";
+import { services } from "./constants";
 
 function Home() {
   return (
     <div>
-      <section className="bg-[#f4f8fd] py-2 px-8 md:px-20">
+      <section className="bg-[#f4f8fd] py-2 px-20">
         <h1 className="font-[800] text-center my-10 text-[55px]">
           Efficient Trade Document Management
         </h1>
-        <p className="md:px-16  text-center   text-[18px]">
+        <p className="px-16  text-center   text-[18px]">
           Welcome to ReiXport, where we specialize in providing secure and
           reliable document management solutions for international trade. Our
           Blockchain Document Transfer (BDT) solution is the largest and
@@ -24,12 +24,12 @@ function Home() {
 
         <img
           className="my-5 rounded-[20px]"
-          alt="homepage"
-          src={require("../assets/mainn1.jpg")}
+          alt="homepage hero"
+          src={require("./assets/homepage-hero.jpg")}
         />
 
         <div className="flex justify-center w-full">
-          <Button link="/read-more">LEARN MORE</Button>
+          <Button>LEARN MORE</Button>
         </div>
       </section>
       {/* <section className="bg-[#f4f8fd] py-2 px-20">
@@ -62,42 +62,35 @@ function Home() {
         </div>
       </section> */}
       <section className="py-2 my-16 px-20">
-        <h1 className="font-[500]  max-sm:text-center py-5 text-[40px] ">
-          Services we provide
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <h1 className="font-[500] py-5 text-[40px] ">Services we provide</h1>
+        <div className="grid grid-cols-2 gap-5">
           {services.map((service) => {
             return (
-              <Card
-                title={service.title}
-                button={service.button}
-                link={service.link}
-                description={service.description}
-              />
+              <Card title={service.title} description={service.description} />
             );
           })}
         </div>
       </section>
       <section className="bg-[#f4f8fd] py-10  px-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className="grid grid-cols-2 gap-16">
           <div className="flex flex-col justify-center">
             <h1 className="font-bold text-[40px] my-2">
-              Trading Inc's: Automating Trade Document Processing
+              Trading Inc: Automating Trade Document Processing
             </h1>
             <p className="text-[18px]">
-              Discover how we help Trading Inc's streamline their trade
+              Discover how we helped Trading Inc streamline their trade
               document processing with our ReiXport Platform, resulting in a 50%
               reduction in processing time and increased accuracy in document
               management.
             </p>
             <div className="my-4">
-              <Button link="/read-more" >READ MORE</Button>
+              <Button >READ MORE</Button>
             </div>
           </div>
           <div>
             <img
               className="rounded-[10px]"
-              src={require("../assets/main-1.png")}
+              src={require("./assets/main-1.jpg")}
               alt="main-1"
             />
           </div>
@@ -105,10 +98,10 @@ function Home() {
       </section>
 
       <section className="bg-[#f4f8fd]  py-5 px-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className="grid grid-cols-2 gap-16">
           <img
             className="rounded-[10px]"
-            src={require("../assets/main-2.png")}
+            src={require("./assets/main-2.jpg")}
             alt="main-2"
           />
           <div className="flex flex-col justify-center">
@@ -116,13 +109,13 @@ function Home() {
               Shipping Co: Secure Electronic Document Transfer
             </h1>
             <p className="text-[18px]">
-              Learn how we help Shipping Co improve their document
+              Learn how we helped Shipping Co improve their document
               transfer process with our Blockchain Document Transfer (BDT)
               solution, ensuring the highest level of security and reducing the
               risk of fraud.
             </p>
             <div className="my-4">
-              <Button link="/read-more" >READ MORE</Button>
+              <Button >READ MORE</Button>
             </div>
           </div>
           <div></div>

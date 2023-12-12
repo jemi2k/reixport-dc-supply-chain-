@@ -7,9 +7,9 @@ const Card = (props) => {
       <h1 className="font-bold text-[19px] py-2 ">{props.title}</h1>
       <p className="text-[17px]">{props.description}</p>
 
-      <div className="mt-4">
+      <div className="mt-4 ">
         <Link to={props.link}>
-          <button className="px-5 py-3 rounded-[10px] text-white hover:bg-blue-900 hover:border-black border-2  bg-blue-600">
+          <button className="px-5 py-3 rounded-[10px] text-white hover:bg-blue-900 hover:border- border-2  bg-blue-600">
             {props.button}
           </button>
         </Link>
