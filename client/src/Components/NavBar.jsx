@@ -30,8 +30,14 @@ const Navbar = () => {
         </ul>
       </div>
       <div>
-        <Button link="/contact">Lets Talk</Button>
+        
         <Link to="/create">
+          <button className="px-5 py-3 mx-2 rounded-[10px]  hover:text-black text-blue-600  border-black border-2  bg-transparent">
+            Start/Create 
+          </button>
+        </Link>
+        <Button link="/contact">Lets Talk</Button>
+        <Link to="/read-more">
           <button className="px-5 py-3 mx-2 rounded-[10px]  hover:text-black text-blue-600  border-black border-2  bg-transparent">
             Register
           </button>
