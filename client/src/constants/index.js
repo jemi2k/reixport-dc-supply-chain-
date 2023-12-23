@@ -26,7 +26,7 @@ export const services = [
     id: "1",
     title: "Electronic Trade Document Creation",
     button: "Create Now",
-    link: "/create",
+    link: "/addmed",
     description:
       "We create accurate and legally compliant electronic trade documents, including bills of lading, certificates of origin, and letters of credit, to streamline your trade processes and ensure seamless transactions.",
   },

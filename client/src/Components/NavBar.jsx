@@ -30,7 +30,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="max-sm:flex max-sm:w-full gap-2 max-sm:justify-center max-sm:items-center max-sm:flex-col">
-        <Link to="/create">
+        <Link to="/addmed">
           <button className="px-5 py-[2px] md:py-3 mx-2 rounded-[10px]  hover:text-black text-blue-600  border-2  bg-transparent">
             Start/Create
           </button>
