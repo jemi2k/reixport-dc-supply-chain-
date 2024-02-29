@@ -1,4 +1,5 @@
-![image](https://github.com/jemi2k/reixport-dc-supply-chain-/assets/81765649/2de5eb1e-25ed-4edd-8860-74412c559489)# ReiXport, Secure and Efficient Trade Document Management MVP 
+# ReiXport, Secure and Efficient Trade Document Management MVP 
+##Note: Before running the website, you have to run a local node and deploy to the local node. Refer to the README for further details.
 
 
 
