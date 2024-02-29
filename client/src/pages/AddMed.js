@@ -57,7 +57,7 @@ function AddMed() {
       setMedStage(medStage);
       setloader(false);
     } else {
-      window.alert("The smart contract is not deployed to current network, run on local node frist read more on README.md on github");
+      window.alert("The smart contract is not deployed to current network, run on local node, read more on README.md on github");
     }
   };
   if (loader) {
