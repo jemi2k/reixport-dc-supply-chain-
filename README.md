@@ -1,4 +1,4 @@
-# ReiXport, Secure and Efficient Trade Document Management on Blockchain #MVP 
+# ReiXport, Secure and Efficient Trade Finance Document Management System on Blockchain #MVP 
 ## Note: Before running the website, you have to run a local node and deploy to the local node. Refer to the README for further details.
 # [Reixport](https://reixport.vercel.app) 
 
