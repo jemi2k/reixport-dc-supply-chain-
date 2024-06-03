@@ -1,4 +1,4 @@
-# Capstone Project
+# Capstone Project, ECE Computer Stream
 # ReiXport, Secure and Efficient Trade Finance Document Management System on Blockchain #MVP 
 
 ## Note: Before running the website, you have to run a local node and deploy to the local node. Refer to the README for further details.
